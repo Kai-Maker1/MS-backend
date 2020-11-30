@@ -23,10 +23,7 @@ public class FileUploadController {
     //上传讲师头像的方法
     @PostMapping("upload")
     public R uploadTeacherImg(@RequestParam("file") MultipartFile file,@RequestParam(value="host",required = false) String host){
-//        String endpoint = "oss-cn-beijing.aliyuncs.com";
-//        String accessKeyId = "LTAI4Fj4JYeyj8MERHj7QCNM";
-//        String accessKeySecret = "23grrLDNCBE4jjJpFVWC4jc14itgRl";
-//        String yourBucketName = "eduteacher11111";
+
         String endpoint = ConstantPropertiesUtil.ENDPOINT;
         String accessKeyId = ConstantPropertiesUtil.KEYID;
         String accessKeySecret = ConstantPropertiesUtil.KEYSECRET;
